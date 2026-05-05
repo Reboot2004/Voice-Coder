@@ -1,0 +1,8 @@
+faster-whisper
+sounddevice
+numpy
+requests
+pynput
+colorama
+scipy
+soundfile
