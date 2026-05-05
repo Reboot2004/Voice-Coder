@@ -35,6 +35,18 @@ VoiceCoder is a high-performance, **100% local** voice-driven coding assistant. 
 2.  **Voice Trigger**: Hold `Ctrl + Alt + V` and speak your command (e.g., *"Show me all files larger than 10MB"*).
 3.  **Verify & Execute**: Release the keys, review the suggested command, and press `y` to execute.
 
+## 🤖 Agent Mode (Autonomous)
+
+For complex tasks that require multiple steps (e.g., *"Find the bug in main.py, fix it, and verify with a test run"*), use the autonomous agent:
+```powershell
+python main_agent.py
+```
+In this mode, the AI will enter a **Reasoning-Action loop**:
+-   **Think**: It plans the next logical step.
+-   **Act**: It executes a shell command.
+-   **Observe**: It reads the command output.
+-   **Iterate**: It repeats until the goal is achieved.
+
 ## ⚙️ Configuration (`config.py`)
 
 Easily customize your experience by editing `config.py`:
